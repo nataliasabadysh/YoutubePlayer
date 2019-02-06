@@ -38,5 +38,4 @@ export default class App extends Component {
   // };
 
      <VideoList histories={histories} onDeleteNote={this.handleDeleteNote} />
-
 */

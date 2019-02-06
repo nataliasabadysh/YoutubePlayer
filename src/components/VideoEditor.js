@@ -1,37 +1,37 @@
 import React, { Component } from 'react';
 
-export default class NoteEditor extends Component {
+
+export default class VideoEditor extends Component {
   state = {
     url: ''
   };
 
   handleChange = ({ target }) => {
-    const { name, value } = target;
-
-    this.setState({ [name]: value });
+    const { name, defaultValue } = target;
+    this.setState({ [name]: defaultValue });
   };
 
   handleSubmit = e => {
     e.preventDefault();
 
     this.props.onSubmit(this.state.url);
-
-    this.setState({ url: '' });
+    // this.setState({ url: '' });
   };
 
   render() {
     const { url } = this.state;
 
-    return (
+    return (  
       <form onSubmit={this.handleSubmit}>
         <input
           type="text"
           name="text"
-          value={url}
+          defaultValue={url}
           onChange={this.handleChange}
         />
         <button>Go</button>
       </form>
+      
     );
   }
 }

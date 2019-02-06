@@ -1,20 +1,18 @@
 import React from 'react';
 
-const VideoList = ({ histories }) => (
+// Components
+import Videoviever from './Videoviever';
+
+const VidioList = ({ histories }) =>   console.log( 'histories', histories) || (
+
   <ul>
     {histories.map(({ id, url }) => (
       <li key={id}>
-          <video 
-                  width="320" 
-                  height="240" 
-                  controls
-                >
-                <source src={url} type="video/mp4" />   
-            </video>
-        <span>{url}</span>
+          <Videoviever url={url} />
       </li>
     ))}
   </ul>
 );
 
-export default VideoList;
+export default VidioList;
+ 
