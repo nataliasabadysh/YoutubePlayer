@@ -87,3 +87,11 @@ const ViewOviever = ({ url }) => (
             <source src={url} type="video/mp4" />   
          </video> 
 );
+
+
+
+# git page 
+
+<App basename='/YoutubePlayer/build' />
+
+"homepage": "https://nataliasabadysh.github.io/YoutubePlayer/build",
