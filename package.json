@@ -15,6 +15,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage": "https://nataliasabadysh.github.io/YoutubePlayer/build",
+
   "eslintConfig": {
     "extends": "react-app"
   },
