@@ -1,14 +1,14 @@
 import React from 'react';
 
 // Components
-import Videoviever from './Videoviever';
+import ViewOviever from './Videoviever';
 
-const VidioList = ({ histories }) =>   console.log( 'histories', histories) || (
+const VidioList = ({ histories }) => (
 
   <ul>
     {histories.map(({ id, url }) => (
       <li key={id}>
-          <Videoviever url={url} />
+          <ViewOviever url={url} />
       </li>
     ))}
   </ul>

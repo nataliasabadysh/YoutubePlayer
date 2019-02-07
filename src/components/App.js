@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import v4 from 'uuid/v4';
+// 
 import VideoList from './VideoList';
 import VideoEditor from './VideoEditor';
 
@@ -28,14 +29,3 @@ export default class App extends Component {
     );
   }
 }
-
-/*
-
-  // handleDeleteNote = id => {
-  //   this.setState(prevState => ({
-  //     histories: prevState.histories.filter(history => history.id !== id)
-  //   }));
-  // };
-
-     <VideoList histories={histories} onDeleteNote={this.handleDeleteNote} />
-*/

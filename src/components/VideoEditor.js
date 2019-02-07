@@ -3,19 +3,19 @@ import React, { Component } from 'react';
 
 export default class VideoEditor extends Component {
   state = {
-    url: ''
+    url: '',
   };
 
-  handleChange = ({ target }) => {
-    const { name, defaultValue } = target;
+  handleChange = (e) => {
+    const { name, defaultValue } = e.target;
     this.setState({ [name]: defaultValue });
   };
 
   handleSubmit = e => {
     e.preventDefault();
 
-    this.props.onSubmit(this.state.url);
-    // this.setState({ url: '' });
+    this.props.onSubmit(e.target.text.value);
+    this.setState({ url: '' });
   };
 
   render() {
